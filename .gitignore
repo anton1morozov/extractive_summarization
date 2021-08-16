@@ -1,0 +1,6 @@
+venv/
+.idea/
+.ipynb_checkpoints/
+datasets/
+*/__init__.py
+*.pyc

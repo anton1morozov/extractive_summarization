@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" type="text/javascript"></script>
+        <script src="../static/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="../static/js/document.js" type="text/javascript"></script>
+
+        <style type="text/css">
+            #input-text-block {
+                width: 1000px;
+                height: 300px;
+                margin: auto;
+            }
+            #input-text {
+                width: 1000px;
+                height: 300px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+            #k-block {
+                width: 100px;
+                height: 30px;
+                margin: auto;
+            }
+            #k {
+                width: 100px;
+                height: 30px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+            #result-block {
+                width: 1000px;
+                height: 300px;
+                margin: auto;
+            }
+            #result {
+                width: 1000px;
+                height: 300px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <title>Summarizer</title>
+            <style>
+                h1 {
+                    font-family: Verdana, Arial, Helvetica, sans-serif;
+                    text-align: center
+                }
+                p {
+                    font-family: 'Times New Roman', Times, serif;
+                    text-align: center
+                }
+                d {
+                    font-family: Verdana, Arial, Helvetica, sans-serif;
+                    text-align: right;
+                }
+            </style>
+            <h1>Document summarization</h1>
+        </header>
+            <p>Please enter text for summarization</p>
+            <br/>
+            <div id="input-text-block">
+                <input id="input-text" type="text" name="text">
+            </div>
+            <br/>
+            <p>Please specify number of sentences to return</p>
+            <br/>
+            <div id="k-block">
+                <input id="k" type="number" name="k" value="3">
+            </div>
+            <br/>
+            <div id="result-block">
+                <div id="result"></div>
+            </div>
+        <br/>
+        <footer>
+           <d>  </d>
+        </footer>
+    </body>
+</html>
